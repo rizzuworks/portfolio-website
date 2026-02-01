@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const MENU = ["About", "Projects", "Experience", "Tech Stack"];
+const MENU = ["About", "Projects", "Experience", "Stack"];
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -68,7 +68,7 @@ const Navbar = () => {
 
                 <button
                   onClick={() => setOpen(!open)}
-                  className="md:hidden w-11 h-11 flex items-center justify-center"
+                  className="md:hidden w-11 h-11 flex items-center justify-center border border-white/10 rounded-xl"
                   aria-label="Toggle menu"
                 >
                   <svg width="24" height="24" viewBox="0 0 24 24">

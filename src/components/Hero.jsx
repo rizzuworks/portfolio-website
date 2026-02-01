@@ -16,7 +16,10 @@ const Hero = () => {
   };
 
   return (
-    <section id="about" className="relative z-10 min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20">
+    <section 
+      id="about" 
+      className="relative z-10 min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20"
+    >
       
       <div className="max-w-4xl relative">
         <ScrollReveal delay={0.1}>

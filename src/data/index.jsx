@@ -1,3 +1,4 @@
+import { link } from "framer-motion/client";
 import { 
     SiReact, SiNextdotjs, SiTypescript, SiNodedotjs, 
     SiPostgresql, SiTailwindcss, SiFigma, SiGit, 
@@ -67,6 +68,7 @@ export const projects = [
       desc: "A robust backend REST API for music management, featuring authentication, playlists, and high-performance caching.",
       color: "from-blue-500 to-cyan-500",
       span: "md:col-span-1",
+      link: "https://github.com/rizzuworks/openmusic-api",
       isConfidential: false
     },
     {
@@ -75,6 +77,7 @@ export const projects = [
       desc: "A responsive web application for efficient note management with real-time search and dynamic archiving capabilities.",
       color: "from-green-500 to-emerald-500",
       span: "md:col-span-1",
+      link: "https://github.com/rizzuworks/personal-notes-app",
       isConfidential: false
     },
     {
@@ -83,6 +86,7 @@ export const projects = [
       desc: "A secure cross-platform mobile examination app designed for a seamless and user-friendly testing experience.",
       color: "from-orange-500 to-red-500",
       span: "md:col-span-2",
+      link: "https://github.com/rizzuworks/easexam",
       isConfidential: false
     }
 ];

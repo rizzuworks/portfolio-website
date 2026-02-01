@@ -39,14 +39,20 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className={`absolute top-6 right-6 p-2 rounded-full border bg-black/20 backdrop-blur-sm transition-colors
-              ${project.isConfidential 
-                  ? 'border-red-500/30 text-red-500 cursor-not-allowed' 
-                  : 'border-white/10 text-white group-hover:bg-white group-hover:text-black cursor-pointer'
-              }`}
-            >
-              {project.isConfidential ? <IoLockClosed /> : <IoArrowForward className="-rotate-45" />}
-            </div>
+            {project.isConfidential ? (
+              <div className="absolute top-6 right-6 p-2 rounded-full border bg-black/20 backdrop-blur-sm transition-colors border-red-500/30 text-red-500 cursor-not-allowed z-10">
+                <IoLockClosed />
+              </div>
+            ) : (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="absolute top-6 right-6 p-2 rounded-full border bg-black/20 backdrop-blur-sm transition-colors border-white/10 text-white group-hover:bg-white group-hover:text-black cursor-pointer z-10"
+              >
+                <IoArrowForward className="-rotate-45" />
+              </a>
+            )}
           </BentoCard>
         ))}
       </div>
