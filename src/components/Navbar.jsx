@@ -35,7 +35,7 @@ const Navbar = () => {
             marginTop: isScrolled ? 16 : 24,
           }}
           transition={{ type: "spring", stiffness: 120, damping: 22 }}
-          className="w-full max-w-[1100px] px-4 md:px-0"
+          className="w-full max-w-[1100px] px-4 xl:px-0"
         >
           <nav className="backdrop-blur-xl bg-black/80 border border-white/10 shadow-xl px-6 py-4 rounded-2xl">
             <div className="flex items-center justify-between">
@@ -61,6 +61,7 @@ const Navbar = () => {
                 {/* CTA DESKTOP */}
                 <a
                   href="#contact"
+                  onClick={(e) => scrollTo(e, "contact")}
                   className="hidden md:inline-flex bg-white text-black px-6 py-2 rounded-xl text-sm font-bold whitespace-nowrap hover:bg-slate-200 transition"
                 >
                   Let’s Talk
@@ -143,6 +144,7 @@ const Navbar = () => {
 
               <a
                 href="#contact"
+                onClick={(e) => scrollTo(e, "contact")}
                 className="mt-6 bg-white text-black px-10 py-4 rounded-xl font-bold text-base hover:bg-slate-200 transition"
               >
                 Let’s Talk

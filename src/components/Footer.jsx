@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <footer 
       id="contact" 
-      className="relative min-h-[60vh] md:min-h-screen flex flex-col items-center justify-center bg-[#050505] overflow-hidden border-t border-white/5"
+      className="relative min-h-[60vh] lg:min-h-screen flex flex-col items-center justify-center bg-[#050505] overflow-hidden border-t border-white/5"
     >
       
-      <div className="absolute inset-0 flex flex-col items-center justify-end md:justify-center select-none pointer-events-none z-0 pb-24 md:pb-0">
+      <div className="absolute inset-0 flex flex-col items-center justify-end lg:justify-center select-none pointer-events-none z-0 pb-24 lg:pb-0">
          <h2 className="text-[26vw] md:text-[18vw] font-black leading-[0.8] tracking-tighter bg-gradient-to-b from-white/25 to-transparent bg-clip-text text-transparent">
            LET'S
          </h2>
