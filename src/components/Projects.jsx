@@ -15,14 +15,31 @@ const Projects = () => {
       <SectionTitle number="01." title="Selected Works" subTitle="Projects" />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
         {projects.map((project, i) => (
-          <BentoCard key={i} delay={i * 0.1} className={`group relative overflow-hidden flex flex-col justify-end ${project.span}`}>
+          <BentoCard 
+            key={i} 
+            delay={i * 0.1}
+            className={`relative overflow-hidden flex flex-col justify-end ${project.span} 
+              ${project.isConfidential 
+                ? 'cursor-not-allowed opacity-60 grayscale-[0.3] border-white/5 bg-black/20' 
+                : 'group hover:border-white/20'
+              }`}
+          >
+            {!project.isConfidential && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="absolute inset-0 z-20"
+                aria-label={`View project ${project.title}`}
+              ></a>
+            )}
             
             <div className={`absolute top-0 right-0 w-[300px] h-[300px] bg-gradient-to-br ${project.color} opacity-20 blur-[80px] group-hover:opacity-30 transition-opacity`}></div>
-            
-            <div className="relative z-10 w-full">
+
+            <div className="relative z-10 w-full pointer-events-none">
               <div className="mb-4 flex flex-wrap gap-2 items-center">
                   {project.isConfidential && (
-                    <div className="flex items-center gap-1 bg-red-500/10 border border-red-500/20 text-red-400 px-2 py-1 rounded-lg w-fit">
+                    <div className="flex items-center gap-1 bg-red-500/20 border border-red-500/30 text-red-400 px-2 py-1 rounded-lg w-fit">
                       <IoLockClosed size={12} />
                       <span className="text-[10px] font-bold tracking-wider">RESTRICTED</span>
                     </div>
@@ -39,20 +56,19 @@ const Projects = () => {
               </div>
             </div>
 
-            {project.isConfidential ? (
-              <div className="absolute top-6 right-6 p-2 rounded-full border bg-black/20 backdrop-blur-sm transition-colors border-red-500/30 text-red-500 cursor-not-allowed z-10">
+            <div className={`absolute top-6 right-6 p-2 rounded-full border bg-black/20 backdrop-blur-sm transition-colors z-10
+                ${project.isConfidential 
+                  ? 'border-red-500/30 text-red-500'
+                  : 'border-white/10 text-white group-hover:bg-white group-hover:text-black'
+                }`}
+            >
+              {project.isConfidential ? (
                 <IoLockClosed />
-              </div>
-            ) : (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noreferrer"
-                className="absolute top-6 right-6 p-2 rounded-full border bg-black/20 backdrop-blur-sm transition-colors border-white/10 text-white group-hover:bg-white group-hover:text-black cursor-pointer z-10"
-              >
+              ) : (
                 <IoArrowForward className="-rotate-45" />
-              </a>
-            )}
+              )}
+            </div>
+
           </BentoCard>
         ))}
       </div>
