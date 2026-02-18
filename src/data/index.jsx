@@ -72,12 +72,12 @@ export const projects = [
       isConfidential: false
     },
     {
-      title: "Personal Notes App",
-      tech: ["React", "Vite", "CSS"],
-      desc: "A responsive web application for efficient note management with real-time search and dynamic archiving capabilities.",
+      title: "Sunglaze Music Festival",
+      tech: ["React", "Vite", "TailwindCSS", "Framer Motion"],
+      desc: "A responsive fictional website for a music festival, showcasing event details and artist information.",
       color: "from-green-500 to-emerald-500",
       span: "md:col-span-1",
-      link: "https://github.com/rizzuworks/personal-notes-app",
+      link: "https://sunglaze-fest.pages.dev",
       isConfidential: false
     },
     {
