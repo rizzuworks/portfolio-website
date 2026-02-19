@@ -8,7 +8,7 @@ const TechStack = () => {
       id="stack" 
       className="py-24 relative z-10 bg-white/[0.01]"
     >
-      <div className="container mx-auto px-6 max-w-6xl">
+      <div className="container mx-auto max-w-6xl">
 
         <SectionTitle 
           number="03." 

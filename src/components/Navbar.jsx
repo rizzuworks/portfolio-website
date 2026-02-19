@@ -35,9 +35,9 @@ const Navbar = () => {
             marginTop: isScrolled ? 16 : 24,
           }}
           transition={{ type: "spring", stiffness: 120, damping: 22 }}
-          className="w-full max-w-[1100px] px-4 xl:px-0"
+          className="w-full max-w-6xl px-4 xl:px-0"
         >
-          <nav className="backdrop-blur-xl bg-black/80 border border-white/10 shadow-xl px-6 py-4 rounded-2xl">
+          <nav className="backdrop-blur bg-black/60 border border-white/10 shadow-xl px-6 py-4 rounded-2xl">
             <div className="flex items-center justify-between">
               <a href="/" className="text-white font-bold text-lg whitespace-nowrap">
                 Haris.
