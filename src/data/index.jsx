@@ -68,16 +68,7 @@ export const projects = [
       desc: "A robust backend REST API for music management, featuring authentication, playlists, and high-performance caching.",
       color: "from-blue-500 to-cyan-500",
       span: "md:col-span-1",
-      link: "https://github.com/rizzuworks/openmusic-api",
-      isConfidential: false
-    },
-    {
-      title: "Sunglaze Music Festival",
-      tech: ["React", "Vite", "TailwindCSS", "Framer Motion"],
-      desc: "A responsive fictional website for a music festival, showcasing event details and artist information.",
-      color: "from-green-500 to-emerald-500",
-      span: "md:col-span-1",
-      link: "https://sunglaze-fest.pages.dev",
+      githubLink: "https://github.com/rizzuworks/openmusic-api",
       isConfidential: false
     },
     {
@@ -85,8 +76,18 @@ export const projects = [
       tech: ["React Native", "Supabase", "Expo", "NativeWind"],
       desc: "A secure cross-platform mobile examination app designed for a seamless and user-friendly testing experience.",
       color: "from-orange-500 to-red-500",
+      span: "md:col-span-1",
+      githubLink: "https://github.com/rizzuworks/easexam",
+      isConfidential: false
+    },
+    {
+      title: "Sunglaze Music Festival",
+      tech: ["React", "Vite", "TailwindCSS", "Framer Motion" , "Cloudflare Pages"],
+      desc: "A responsive fictional website for a music festival, showcasing event details and artist information.",
+      color: "from-green-500 to-emerald-500",
       span: "md:col-span-2",
-      link: "https://github.com/rizzuworks/easexam",
+      githubLink: "https://github.com/rizzuworks/sunglaze-fest",
+      demoLink: "https://sunglaze-fest.pages.dev",
       isConfidential: false
     }
 ];

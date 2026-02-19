@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div className="bg-[#050505] font-sans text-slate-300 selection:bg-sky-500/30 selection:text-sky-200 overflow-x-hidden">
+    <div className="bg-[#050505] font-sans text-slate-300 selection:bg-sky-500/30 selection:text-sky-200 overflow-x-hidden px-6">
       
       <style>{`
         html { scroll-behavior: smooth; }

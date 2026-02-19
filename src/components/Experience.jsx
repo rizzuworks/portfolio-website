@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <section 
       id="experience" 
-      className="py-24 container mx-auto px-6 max-w-4xl relative z-10"
+      className="py-24 container mx-auto max-w-4xl relative z-10"
     >
       <SectionTitle 
         number="02." 
